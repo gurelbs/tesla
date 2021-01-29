@@ -30,7 +30,7 @@ section{
   display: flex;
   justify-content: space-between;
 }
-nav{
+.header nav{
   height: 52px;
   padding: .75rem 1.5rem;
 }
@@ -52,9 +52,9 @@ nav ul li a{
   height:24;
   color: white;
 }
-.logo-2 svg{
+.logo-2 svg,.logo-5 svg{
   width:100px;
-  height:24;
+  height:24px;
 }
 .details{
   margin: 0 auto;
@@ -142,60 +142,60 @@ nav ul li a{
   }
 }
 
-.section-2 {
+.section-2 ,.section-5 {
   height: 100vh;
   max-width: 100%;
   display: flex;
 }
-.img-cover-section2{
+.img-cover-section2,.img-cover-section5{
   display: inline-flex;
   width: 100%;
 }
-.img-cover-section2 .img-wrap {
+.img-cover-section2 .img-wrap ,.img-cover-section5 .img-wrap {
   width: 70%;
 }
-.img-cover-section2 .section-2-details {
+.img-cover-section2 .section-2-details ,.img-cover-section5 .section-5-details {
   width: 30%;
   height: 100vh;
 }
-.logo-2{
+.logo-2,.logo-5{
   padding: 1rem;
 }
-.img-cover-section2 div img {
+.img-cover-section2 div img ,.img-cover-section5 div img {
   width: 100%;
   height: 100vh;
 }
-.img-cover-section2 .info {
+.img-cover-section2 .info,.img-cover-section5 .info {
   width: 80%;
   margin: 0 auto;
   color: #393c41;
 }
-.img-cover-section2 .info h6{
+.img-cover-section2 .info h6,.img-cover-section5 .info h6{
   font-weight: 500;
   font-size: 1rem;
   padding: 1rem 0 0 0;
 }
-.img-cover-section2 .info h1{
+.img-cover-section2 .info h1,.img-cover-section5 .info h1{
   font-weight: 600;
   font-size: 2rem;
   padding: 0 0 3rem 0;
 }
-.img-cover-section2 .info p{
+.img-cover-section2 .info p,.img-cover-section5 .info p{
   font-weight: 400;
   font-size: 1rem;
   padding: 1rem 0 5rem 0;
 }
-.img-cover-section2 .section-2-btn {
+.img-cover-section2 .section-2-btn ,.img-cover-section5 .section-5-btn {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 5rem;
 }
-.section-2-btn button {
+.section-2-btn button,.section-5-btn button {
   font-size: 1rem;
   font-weight: 600;
 }
-.section-2-btn .learn-more {
+.section-2-btn .learn-more ,.section-5-btn .learn-more {
   border: 3px solid black;
   border: 0;
   background-color: transparent;
@@ -206,7 +206,7 @@ nav ul li a{
   text-decoration: none;
   color: #000000;
 }
-.section-2-btn .learn-more span {
+.section-2-btn .learn-more span ,.section-5-btn .learn-more span {
   border: 3px solid black;
   border-radius: 50%;
   padding: .25rem 0.75rem;
@@ -215,12 +215,12 @@ nav ul li a{
   transition: .3s ease-in-out;
   cursor: pointer;
 }
-.section-2-btn .learn-more span:hover{
+.section-2-btn .learn-more span:hover,.section-5-btn .learn-more span:hover{
   background-color: black;
   color: white;
   transition: .3s ease-in-out;
 }
-.img-cover-section2 .section-2-btn  .order-now{
+.img-cover-section2 .section-2-btn  .order-now,.img-cover-section5 .section-5-btn  .order-now{
   background-color: transparent;
   border: 3px solid black;
   border-radius: 30px;
@@ -238,28 +238,28 @@ nav ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.img-cover-section2 .section-2-btn  .order-now:hover{
+.img-cover-section2 .section-2-btn  .order-now:hover,.img-cover-section5 .section-5-btn  .order-now:hover{
   background-color: black;
   color: white;
   transition: .3s ease-in-out;
 }
-.section-3,.section-4{
+.section-3,.section-4,.section-6,.section-7{
   height: 100vh;
 }
-.cover-img-section3{
+.cover-img-section3,.cover-img-section6{
   position: relative;
   width: 100%;
   background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop') no-repeat center center contain;
 }
-.cover-img-section3,.cover-img-section4 {
+.cover-img-section3,.cover-img-section4,.cover-img-section6,.cover-img-section7 {
   position: relative;
   width: 100%;
 }
-.cover-img-section3 img,.cover-img-section4 img{
+.cover-img-section3 img,.cover-img-section4 img,.cover-img-section6 img,.cover-img-section7 img{
   width: 100%;
   height: 75vh;
 }
-.cover-img-section3 .details,.cover-img-section4 .details {
+.cover-img-section3 .details,.cover-img-section4 .details,.cover-img-section6 .details,.cover-img-section7 .details {
   position: absolute;
   display: flex;
   margin: 0 auto;
@@ -269,23 +269,23 @@ nav ul li a{
   top:22rem;
   padding: 0 8rem;
 }
-.cover-img-section3 .details div,.cover-img-section4 .details div{
+.cover-img-section3 .details div,.cover-img-section4 .details div,.cover-img-section6 .details div,.cover-img-section7 .details div{
   padding: 0 2rem;
 }
-.section3-info,.section4-info {
+.section3-info,.section4-info,.section6-info,.section7-info {
   position: relative;
   margin: auto;
   padding: 1.5rem 8rem;
   height: 20vh;
   display: flex;
 }
-.section3-info .performance,.section4-info .performance{
+.section3-info .performance,.section4-info .performance,.section6-info .performance,.section7-info .performance{
   width: 35%;
   justify-content: right;
   display: inline-block;
   padding-left: 2rem;
 }
-.section3-info .performance-details,.section4-info .performance-details{
+.section3-info .performance-details,.section4-info .performance-details,.section6-info .performance-details,.section7-info .performance-details{
   max-width: 65%;
   padding: 0 4rem;
   color: #393c41;
@@ -293,12 +293,12 @@ nav ul li a{
   line-height: 1.5;
 }
 
-.section-3-btn button ,.section-4-btn button {
+.section-3-btn button ,.section-4-btn button,.section-6-btn button,.section-7-btn button {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 1rem;
 }
-.section-3-btn .learn-more ,.section-4-btn .learn-more {
+.section-3-btn .learn-more ,.section-4-btn .learn-more,.section-6-btn .learn-more,.section-7-btn .learn-more {
   border: 3px solid black;
   border: 0;
   background-color: transparent;
@@ -309,7 +309,7 @@ nav ul li a{
   text-decoration: none;
   color: #000000;
 }
-.section-3-btn .learn-more span ,.section-4-btn .learn-more span {
+.section-3-btn .learn-more span ,.section-4-btn .learn-more span,.section-6-btn .learn-more span,.section-7-btn .learn-more span {
   border: 3px solid black;
   border-radius: 50%;
   padding: .25rem 0.75rem;
@@ -318,12 +318,12 @@ nav ul li a{
   transition: .3s ease-in-out;
   cursor: pointer;
 }
-.section-3-btn .learn-more span:hover,.section-4-btn .learn-more span:hover{
+.section-3-btn .learn-more span:hover,.section-4-btn .learn-more span:hover,.section-6-btn .learn-more span:hover,.section-7-btn .learn-more span:hover{
   background-color: black;
   color: white;
   transition: .3s ease-in-out;
 }
-.section-3-btn  .order-now,.section-4-btn  .order-now{
+.section-3-btn  .order-now,.section-4-btn  .order-now,.section-6-btn  .order-now,.section-7-btn  .order-now{
   background-color: transparent;
   border: 3px solid black;
   border-radius: 30px;
@@ -342,7 +342,7 @@ nav ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.section-3-btn  .order-now:hover,.section-4-btn  .order-now:hover{
+.section-3-btn  .order-now:hover,.section-4-btn  .order-now:hover,.section-6-btn  .order-now:hover,.section-7-btn  .order-now:hover{
   background-color: black;
   color: white;
   transition: .3s ease-in-out;
@@ -351,6 +351,242 @@ nav ul li a{
   width: 40px;
   height: 40px;
 }
+.img-cover-section5 .info h1{
+  font-weight: 600;
+  font-size: 2rem;
+  padding:0;
+}
+.section-5-details .info p {
+  padding: 1rem;
+}
+.section-5-details .section5-map-img{
+  height: 250px;
+  width: 100%;
+  padding: 0 2.5rem;
+}
+.img-wrap{
+  position: relative;
+}
+.section5-details{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  margin: 3rem auto;
+  justify-content: left;
+  padding: 0 1rem;
+}
+.section5-details .details{
+  display: flex;
+  color: white;
+}
+.section5-details .details div{
+  padding: 0 1rem;
+}
+.img-cover-section5 .section-5-btn {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0 0 0;
+}
+.cover-img-section6 .details{
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  justify-content: center;
+  color: black;
+  top:2rem;
+  padding: 0 2rem;
+}
+.cover-img-section6 .details div,.cover-img-section7 .details div{
+  padding: 1.5rem 0;
+}
+.cover-img-section6 .details .range{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+}
+.cover-img-section6 .details .motor .section-6-mini-img,.range .section-7-mini-img{
+  height: 40px;
+  width: 40px;
+}
+.motor .section-7-mini-img{
+  height: 40px;
+  width: 80px;
+}
+.cover-img-section7 .details .range{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+}
+.cover-img-section7 .details {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  justify-content: right;
+  color: white;
+  top:2rem;
+  right: 0;
+  padding: 0 2rem;
+}
+.section-8{
+  height: 100vh;
+  display: flex;
+}
+.section-8 div{
+  width: 50%;
+}
+.section-8 .img-wrap{
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/2b239404-c402-4c55-9a10-a061f2cf0ae8/bvlatuR/std/947x677/global-spec-hero') no-repeat center center;
+  height: auto;
+  background-size: contain;
+  background-color: black;
+}
+.section-8 .img-wrap img{
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.section-8 .info{
+  background-color: black;
+  color: white;
+}
+.section-8 .info .light{
+  font-weight: 200;
+}
+.section-8 .info h1 {
+  padding: 2rem 0 0 3.5rem;
+  font-size: 1.5rem;
+}
+.section-8 .flex-info {
+  display: flex;
+  width: 80%;
+  padding: 0 3rem;
+}
+.section-8 .flex-info button{
+  border: 3px solid rgb(70, 70, 70);
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+  padding: .5rem 1.5rem;
+  margin: .3rem 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.section-8 .flex-info button:focus{
+  border: 3px solid#eee;
+  border-radius: 30px;
+  outline: none;
+}
+.section-8 .flex-info .compare{
+  background-color: rgb(70, 70, 70);
+  border: 3px solid rgb(70, 70, 70);
+}
+.section-8 .flex-info div {
+  width: 50%;
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+}
+.flex-info h6::before{
+  display: block;
+  content: '';
+  background-color: hsla(0,0%,100%,.5);
+  inline-size: 30px;
+  block-size: 1px;
+  margin: .5rem 0;
+}
+.flex-info h6{
+  margin: .5rem 0;
+  font-size: .75rem;
+}
+.flex-info p {
+  padding: 0 0 1rem 0;
+  font-size: .8rem;
+}
+.section-9 {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+.section-9 .flex-info{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.section-9 .flex-info div{
+  width: 50%;
+}
+.section-9 .flex-info .info{
+  margin: auto;
+}
+.section-9 .flex-info .info h1{
+  margin: 0 auto;
+  text-align: center;
+}
+.section-9 .flex-info .info .info-btns{
+  margin: 0 auto;
+  text-align: left;
+  padding: 1rem 0;
+  
+}
+.section-9 .flex-info .info .info-btns button{
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.section-9 .flex-info .info .info-btns button a{
+  position: relative;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  padding: .45rem 2.5rem;
+  outline: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  text-decoration: none;
+  transition: .25s ease-in-out;
+
+}
+.section-9 .flex-info .info .info-btns button .order-now {
+  background-color: white;
+  color: black;
+}
+.section-9 .flex-info .info .info-btns button .compare:hover {
+  background-color: white;
+  color: black;
+  transition: .25s ease-in-out;
+}
+.section-9 .img-wrap {
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/457dd9fa-6e32-43b1-a6cf-9b3d76e9e181/bvlatuR/std/2232x720/global-order-hero') no-repeat center center;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+}
+.section-9 nav {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section-9 nav ul{
+  margin-bottom: 1.5rem;
+}
+.section-9 nav ul li a{
+  font-size: .7rem;
+  font-weight: 500;
+  padding: 0 .5rem;
+}
+
 
 
 
